@@ -82,6 +82,7 @@ Sleep 500
 
 ; Get more attributes (4/4)
 ScrollDown(9)
+Sleep 1000 ; extra sleep for scroll bounce
 Send, #{PrintScreen}
 Sleep 500
 
@@ -98,7 +99,6 @@ return
 ScrollDown(num:=1) {
     Loop % num {
         Send {WheelDown}
-        Sleep 100
+        Sleep 500
     }
-    Sleep 1000
 }
