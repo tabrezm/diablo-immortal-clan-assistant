@@ -1,7 +1,8 @@
 ;
 ; Capture screenshots of Immortal member data. If there are less than 300
 ; members, this script will generate duplicate screenshots for the last page.
-; These screenshots will be de-duped by the data processor.
+; These screenshots will be de-duped by the data processor. All coordinates are
+; calibrated for PC @ 3360x2100 (full-screen, full-screen).
 ;
 
 MemberYCoords := [775, 1000, 1225, 1450, 1675]
@@ -9,7 +10,7 @@ MemberYCoords := [775, 1000, 1225, 1450, 1675]
 F5::
 
 ; Loop over members in table.
-Loop 299 {
+Loop 300 {
     ; Take screenshot of table every 5 rows
     if (Mod(A_Index - 1, 5) == 0) {
         Send, #{PrintScreen}
