@@ -2,7 +2,7 @@
 ; Capture screenshots of Immortal member data. If there are less than 300
 ; members, this script will generate duplicate screenshots for the last page.
 ; These screenshots will be de-duped by the data processor. All coordinates are
-; calibrated for PC @ 3360x2100 (full-screen, full-screen).
+; calibrated for PC @ 3360x2100 (full-screen, windowed).
 ;
 
 MemberYCoords := [775, 1000, 1225, 1450, 1675]
