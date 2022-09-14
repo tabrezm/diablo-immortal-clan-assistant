@@ -5,6 +5,10 @@
 ; calibrated for PC @ 3360x2100 (full-screen, windowed).
 ;
 
+#SingleInstance, Force
+; SendMode Input
+SetWorkingDir, %A_ScriptDir%
+
 MemberYCoords := [775, 1000, 1225, 1450, 1675]
 
 F5::
@@ -54,6 +58,18 @@ ExitApp
 ; Subroutine for processing a member's profile.
 ;
 ProcessProfile:
+; Open skills
+Click 2670 790
+Sleep 1000
+
+; Take screenshot
+Send, #{PrintScreen}
+Sleep 500
+
+; Go back
+Click 2150 320
+Sleep 1000
+
 ; Open attributes
 Click 2270 790
 Sleep 1000
