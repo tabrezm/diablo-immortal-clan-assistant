@@ -81,5 +81,5 @@ SwitchClass(y, numScrolls:=0) {
 
     ; Click dropdown item
     Click 3250 %y%
-    Sleep 500
+    Sleep 2000
 }
